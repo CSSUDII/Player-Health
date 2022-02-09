@@ -1,0 +1,49 @@
+# You can edit the config in-game by running /plaeyerhealth config
+
+
+# Enable/Disable the plugin
+# When you reload the plugin your changes will be applied
+enabled: true
+# Allows the plugin to check for updates when it loads
+check-for-updates: false
+
+# Example: health.cansee
+# or false to disable requiring a permission
+permission-to-see-player-health-under-name: false
+
+# Worlds where this no one will be able to see a players' health under there name
+# You can bypass this will the playerhealth.bypass permission
+# Anyone with the playerhealth.bypass permission will always be able to see players health under there name
+# unless the plugin is disabled or the bypass setting is disabled
+disabled-worlds:
+  - example_world
+
+# If the playerhealth.bypass permission will allow players with the permission to always see a players health
+bypass-enabled: true
+
+# The Health type to show under the players name
+
+# Default:
+# Text: "<player current health> ❤"
+
+# DefaultText
+# Text: "<players current health> Hearts"
+
+# DefaultMaxHeath
+# Text: "<players current health>/<players current max health> ❤"
+
+# Custom
+# Text: "<players current health> <custom text>"
+# Placeholders:
+# &player-max-health& = The players current max health
+# &heart-iron& = ❤
+
+# PacketCustom (The is coming soon, it will not work)
+# Text: <custom text>
+# Placeholders:
+# &player-health& = Players current health
+# &player-max-health& = The players current max health
+# &heart-iron& = ❤
+# &player-name& = The Players name
+health-type: default
+health-text-color: DARK_RED
